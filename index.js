@@ -13,7 +13,7 @@ letters = letters.split('');
 
 // Setting up the columns
 const fontSize = 10;
-const columns = canvas.width / fontSize;
+const columns = Math.round(canvas.width / fontSize) + 1;
 
 // Setting up the drops
 const drops = Array(columns).fill(1);
