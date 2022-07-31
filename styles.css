@@ -34,16 +34,35 @@ body {
   color: #fff;
 }
 
+.imersao {
+  background-color: #873CF1;
+  color: #fff;
+  animation: zoom 2s ease-in-out infinite;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.9, 0.9);
+  }
+
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+
+  to {
+    transform: scale(0.9, 0.9);
+  }
+}
+
 a {
   text-decoration: none;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* justify-content: space-between; */
 }
 
-a > img {
+a>img {
   vertical-align: middle;
   margin-right: 10px;
 }
